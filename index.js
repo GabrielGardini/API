@@ -8,8 +8,8 @@ app.listen('3000')
 
 //GET
 
-// app.route('/').get((req, res) => res.send('hello'))
-// app.route('/lucas').get((req, res) => res.send('hello lucas'))
+app.route('/').get((req, res) => res.send('hello'))
+app.route('/lucas').get((req, res) => res.send('hello lucas'))
 
 //////////////////////////////////////////////////
 
@@ -71,8 +71,8 @@ app.listen('3000')
 ////////////////////////////////////////////
 //CONSUMIR API EXTERNA NO BACKEND
 
-app.route('/').get((req, res) => {
-    axios.get('https://api.github.com/users/gabrielgardini')
-    .then(result => res.send(`<img src="${result.data.avatar_url}"/>`))
-    .catch(error => console.log(error))
-})
+// app.route('/').get((req, res) => {
+//     axios.get('https://api.github.com/users/gabrielgardini')
+//     .then(result => res.send(`<img src="${result.data.avatar_url}"/>`))
+//     .catch(error => console.log(error))
+// })
